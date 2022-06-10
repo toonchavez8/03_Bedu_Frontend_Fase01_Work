@@ -21,7 +21,11 @@ h1  {
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-align: center;
+    text-transform: uppercase;
 }
+ span {
+    color: var(--secondary-color);
+ }
 
 p{
     font-size: 1.2rem;
@@ -68,4 +72,4 @@ img {
     min-width: 250px;
     max-width: 600px;
   }
-}
+
