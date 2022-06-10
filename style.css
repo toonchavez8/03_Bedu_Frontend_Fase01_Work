@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500;700&display=swap');
+
+:root {
+    --primary-color: #025157;
+    --secondary-color: #70A37F;
+    --lightPurple: #4C3957;
+    --darkPurple: #1E152A;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #8b8b8b;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+   background-color: var(--white-color);
+}
+
+h1  {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.emailContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+input[type=email] {
+    width: 100%;
+    max-width: 250px;
+    padding: .5rem .5rem;
+    margin: 8px 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    min-width: 250px;
+    max-width: 600px;
+  }
+}
