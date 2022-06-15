@@ -19,48 +19,43 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: left;
     padding-top: .5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.logo{
+.logo {
     min-width: 1rem;
     max-width: 3rem;
+    margin-left: auto;
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    text-align: left;
-    margin-left: 0;
-
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    list-style: none;   
 }
 
 nav ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     margin-right: 1rem;
     padding: 0px 25px;
     font-family: sans-serif;
     color: #025157;
     border-left: .1rem solid var(--secondary-color);
+    
 }
 
 .actions{
     display: flex;
-    flex-direction: row;
+    margin-left: auto;
 }
 
 .signIn {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    margin-right: auto;
     padding: 0.5rem 1rem;
 }
 
