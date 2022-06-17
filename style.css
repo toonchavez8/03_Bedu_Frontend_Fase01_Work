@@ -15,9 +15,15 @@
     box-sizing: border-box;
 }
 
+
 body {
    background-color: var(--beige);
 }
+
+img {
+    pointer-events: none;
+  }
+
 /* Navegacion*/
 header {
     display: flex;
@@ -99,7 +105,7 @@ section {
     margin-top: 10rem;
 }
 
-h1  {
+.main h1  {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
@@ -111,7 +117,7 @@ h1  {
     color: var(--secondary-color);
  }
 
-p{
+.main p{
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--secondary-color);
@@ -134,12 +140,25 @@ input[type=email] {
     width: 100%;
     max-width: 250px;
     padding: .7rem .5rem;
-    margin: 8px 16px;
     box-sizing: border-box;
     border: none;
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0px 0px  3px var(--gray-color);   
   }
+
+  .emailContainer button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0 5px 5px 0px;
+    padding: .6rem .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
 button {
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -169,4 +188,59 @@ img.capterra {
     justify-content: center;
     max-width: 550px;
     margin: 2rem auto;
+}
+
+/* Video Section */
+
+.videoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: 2rem auto;
+}
+
+/* .videoContainer video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    align-self: center;
+} */
+
+.videoContainer .videoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.videoContainer img {
+    width: 8%;
+    transform: translateX(8rem);
+    border: 1px solid red;
+}
+
+.videoContainer article {
+    padding: 25px;
+}
+
+.videoContainer h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.videoContainer h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-color);
+    margin-top: 0rem;
+    margin-bottom: -1.5rem;
+    text-align: center;
 }
