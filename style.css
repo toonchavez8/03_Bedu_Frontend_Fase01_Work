@@ -9,6 +9,7 @@
     --black-color: #000;
     --beige:#fffbf7;
     --gray-color: #8b8b8b;
+    --green-Accent:#a1d683;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
     padding: 0;
@@ -202,15 +203,6 @@ img.capterra {
     margin: 2rem auto;
 }
 
-/* .videoContainer video {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    align-self: center;
-} */
-
 .videoContainer .videoBox{
     display: flex;
     flex-direction: column;
@@ -218,11 +210,27 @@ img.capterra {
     gap: 1rem;
 }
 
-.videoContainer img {
-    width: 8%;
-    transform: translateX(8rem);
-    border: 1px solid red;
+h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--gray-color);
 }
+.works {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+}
+
+
+.videoContainer img {
+    width: 2.5rem;
+    filter: brightness(100%);
+}
+
 
 .videoContainer article {
     padding: 25px;
@@ -243,4 +251,101 @@ img.capterra {
     margin-top: 0rem;
     margin-bottom: -1.5rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .videoContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 2rem auto;
+        gap: 1rem;
+    }
+    .videoContainer .videoBox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 2rem auto;
+    }
+    .videoContainer img {
+        width: 2.5rem;
+        filter: brightness(100%);
+    }
+    .videoContainer article {
+        padding: 2rem;
+    }
+    .videoContainer h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .videoContainer h4 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--gray-color);
+        margin-top: 0rem;
+        margin-bottom: -1.5rem;
+        text-align: center;
+    }
+}
+    
+
+/* Section Ecommerce */
+
+section.ecommerce {
+    margin-top: 10rem;
+    background-color: var(--green-Accent);
+    display: flex;
+}	
+
+    /* brands rely section */
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0rem 3rem;
+    margin: 2rem auto;
+}
+
+.brands h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.brands p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--darkPurple);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Card section */
+.card {
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+.card img {
+    width: 50rem;
+    height: auto;
+    object-fit: cover;
 }
