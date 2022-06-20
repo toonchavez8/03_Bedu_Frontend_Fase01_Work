@@ -37,6 +37,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--beige);
+    z-index: 1;
 }
 
 header::before {
@@ -313,9 +314,14 @@ h2 {
 /* Section Ecommerce */
 
 section.ecommerce {
-    margin-top: 10rem;
+    margin-top: 5rem;
     background-color: var(--green-Accent);
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 5rem;
 }	
 
     /* brands rely section */
@@ -325,9 +331,9 @@ section.ecommerce {
     flex-direction: column;
     align-items: flex-start ;
     justify-content: center;
-    max-width: 100%;
+    max-width: 35%;
     padding: 0rem 3rem;
-    margin: 2rem auto;
+    margin: 2rem;
 }
 
 .brands h1 {
@@ -348,7 +354,7 @@ section.ecommerce {
 }
 
 .brands img {
-    width: 75%;
+    max-width: 75%;
     margin: 2rem auto;
     margin-left: 0%;
 }
@@ -356,26 +362,126 @@ section.ecommerce {
 /* Card section */
 .card {
     background-color: var(--white-color);
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
 }
-
 
 .ProfilePic {
- /* border: #02515e solid 2px; */
- width: 20rem;
- height: 20rem;
- padding: 0;
- margin: 2rem;
- overflow: hidden;
+    position: relative;
+    width: 20rem;
+    height: 18rem;
+    background: url(/Images/Profilepicture01.jpg) no-repeat;);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
 }
 
-.ProfilePic img {
-    width: 20rem;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.card-text {
+    padding: 1.0rem;
+}
+
+.card-text h3{
+  font: 1em sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+}
+
+.card-text h1 {
+    font: 1.2em sans-serif;
+    font-weight: 400;
+    max-width: 15rem;
+    color: var(--darkPurple);
+    margin-bottom: 1rem;
+}
+
+    /* cart section */
+.cart {
+   display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0%;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.cart img {
+    width: 1.8rem;
+    opacity: 0.5;
+}
+.cart h4    {
+    font-size: .8rem;
+    font-weight: 500;
+    max-width: 10rem;
+    color: var(--gray-color);
+    margin-top: 0rem;
+    margin-bottom: -1.5rem;
+    text-align: left;
+}
+
+.btnWide   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card button {
+    background-color: var(--primary-color);
+    /* border-radius: 1rem; */
+    border: none;
+    color: var(--white-color);
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+    /* ecommerce section for mobile */
+@media screen and (max-width: 768px) {
+    section.ecommerce {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 2rem auto;
+        gap: 1rem;
+    }
+
+    .brands {
+        max-width: 100%;
+        align-items: center;
+        padding: 0rem;
+        margin: 2rem;
+    }
+    .brands h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .brands p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--darkPurple);
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .brands img {
+        max-width: 75%;
+        margin: 2rem auto;
+        margin-left: auto;
+        
+    }
+    
 }
