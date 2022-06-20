@@ -58,11 +58,24 @@ header .is-toolbar {
     z-index: 3;
 }
 
+.logoMatcha a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    margin:0 0.5rem;
+}
+.logoMatcha h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     min-width: 1rem;
     max-width: 3rem;
-    margin-left:2rem;
-    margin-right:2rem;
 }
 
 nav ul {
@@ -157,7 +170,9 @@ input[type=email] {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -170,7 +185,8 @@ button {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+    display: flex;
+    align-items: center;
 }
 
 img.capterra {
@@ -187,7 +203,7 @@ img.capterra {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 550px;
+    max-width: 50%;
     margin: 2rem auto;
 }
 
@@ -331,6 +347,12 @@ section.ecommerce {
     text-align: left;
 }
 
+.brands img {
+    width: 75%;
+    margin: 2rem auto;
+    margin-left: 0%;
+}
+
 /* Card section */
 .card {
     background-color: var(--white-color);
@@ -339,13 +361,21 @@ section.ecommerce {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    padding: 2rem;
-    margin: 2rem auto;
 }
 
-.card img {
-    width: 50rem;
-    height: auto;
-    object-fit: cover;
+
+.ProfilePic {
+ /* border: #02515e solid 2px; */
+ width: 20rem;
+ height: 20rem;
+ padding: 0;
+ margin: 2rem;
+ overflow: hidden;
+}
+
+.ProfilePic img {
+    width: 20rem;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
