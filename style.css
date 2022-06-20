@@ -244,8 +244,8 @@ h2 {
 
 
 .videoContainer img {
-    width: 2.5rem;
-    filter: brightness(100%);
+    width: 2rem;
+    opacity: 50%;
 }
 
 
