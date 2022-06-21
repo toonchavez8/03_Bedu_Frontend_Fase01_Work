@@ -321,15 +321,6 @@ section.ecommerce {
   position: relative;
 }
 
-/* Wave styling */
-.ecommerce svg {
-    position: absolute;
-    color: var(--green-Accent);
-    width: 100%;
-    top: -25.4rem;
-    z-index: -1;
-}
-
 /* brands rely section */
 
 .brands {
