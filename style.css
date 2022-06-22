@@ -315,8 +315,8 @@ section.features-Grid {
 .features-Grid {  
   padding: 2rem 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2em 2em;
   grid-auto-flow: row;
   grid-template-areas:
@@ -327,7 +327,7 @@ section.features-Grid {
 .features-Grid article {
   background-color: var(--white-color);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
   display: flex;
   flex-direction: row;
@@ -363,7 +363,7 @@ section.features-Grid {
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem 1rem;
 }
 
 .textContainer h1 {
@@ -395,6 +395,7 @@ section.features-Grid {
     padding: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: auto;
     gap: 1rem; 
     grid-template-areas:
       ".";
@@ -454,7 +455,7 @@ section.ecommerce {
 }
 
 .brands img {
-  max-width: 75%;
+  max-width: 100%;
   margin: 2rem auto;
   margin-left: 0%;
 }
