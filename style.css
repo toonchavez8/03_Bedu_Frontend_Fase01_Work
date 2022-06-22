@@ -331,8 +331,10 @@ section.features-Grid {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   overflow: hidden;
   margin: 0;
+  /* position: relative; */
 }
 
 .features-Grid .imgIcon {
@@ -351,10 +353,35 @@ section.features-Grid {
   filter: invert(100%);
 }
 
-.features-Grid .imgBox {
+.imgFlexBlock {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.features-Grid .imgBox {
+  width: 400px;
+  right: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.features-Grid .imgBox-vert {
+  width: 400px;
+  right: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.imgBox img {
+  max-width: 85%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .features-Grid .textContainer {
@@ -363,8 +390,14 @@ section.features-Grid {
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
+<<<<<<< HEAD
   padding: 1rem 1rem;
+=======
+  padding: 2rem;
+  max-width: 75%;
+>>>>>>> develop
 }
+
 
 .textContainer h1 {
   font-size: 1.5rem;
@@ -607,4 +640,52 @@ section.ecommerce {
     margin: 2rem auto;
     margin-left: auto;
   }
+}
+
+/* How does Matcha Work Section */
+.how-does-matcha-work {
+  margin-top: 0rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.workSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0rem 3rem;
+  margin: 2rem;
+}
+
+.workSection h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.workSection p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--darkPurple);
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 50rem;
+}
+
+.publishGrid-Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 100%;
+  padding: 2rem;
 }
