@@ -502,6 +502,9 @@ section.ecommerce {
   margin-left: 0%;
 }
 
+.btn-Secondary {
+  background-color: var(--primary-color);}
+
 /* Card section */
 .card {
   background-color: var(--white-color);
