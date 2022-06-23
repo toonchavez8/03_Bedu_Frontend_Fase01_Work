@@ -17,7 +17,7 @@
 <header>
     <!-- Regersar pagina principal-->
     <div class="logoMatcha">  <a href="index.html">
-        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha Logo" class="logo"><h1> Matcha</h1>
+        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha Logo" class="logo"><h1> matcha</h1>
     </a> </div>
   
     <!--Menu -->
@@ -39,7 +39,7 @@
 
     <!-- Main header and CTA -->
     <section class="main">
-        <h1>Build your <span>Blog</span>.Build your <span>Business</span>.</h1>
+        <h1>Build your Blog. Build your Business.</h1>
         <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog's impact on sales</p>
         <form>
             <div class="emailContainer">
@@ -57,17 +57,28 @@
             <p>
             <strong>No credit card</strong> required.
             </p>
-       
-            <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" width="200px" class="capterra"/>
+            <div class="capterraStars">
+               <a href="https://www.capterra.mx/software/185498/matcha">
+                <img src="/Images/capterra.png" alt="image capterra link with 4.6 star ratting" width="250px" class="capterra"/>
+            </a> 
+            </div>
+            
             <img src="/Images/intro_group_image.png" alt="image dashboard" class="dashBrd">
     </section>
    
 <!-- conteneder de video -->
     <section class="videoContainer"> 
         <div class="videoBox"> 
-            <video controls 
-            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
-            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">Your device doesnt support video</video>
+             <!-- Load Facebook SDK for JavaScript -->
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="2aHcR0Gr"></script>
+
+                <!-- Your embedded video player code -->
+                <div class="fb-video" data-href="https://www.facebook.com/matchacontent/videos/305929420552373" data-width="500" data-show-text="false">
+                    <blockquote cite="https://www.facebook.com/matchacontent/videos/305929420552373/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/matchacontent/videos/305929420552373/"></a>
+                        <a href="https://www.facebook.com/matchacontent/">Matcha</a> on Wednesday, July 15, 2020</blockquote></div>
+
             <div class="works">
                 <h2>See how it works</h2> 
                 <img src="/Images/reshot-icon-arrow-turn-WUJFKY9XZC.svg" alt="arrow image">
@@ -76,13 +87,13 @@
         </div>
         <article>
             <h1>Publish to your blog in minutes, not hours.</h1>
-            <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+            <p>Become a trusted brand in your niche in no time flat. Instantly publish from our library of 10,000+ professionally written articles, or get custom content from our expert writers. Matcha gives ecommerce businesses the tools they need to compete.</p>
             <br>
             <h4>Start publishing today:</h4>
             <div class="emailContainer">
                 <input type="email" placeholder="Enter your email" name="email" re/> 
                 <button type="submit">
-                Try it now &rarr;
+                Start my trai
                 </button>
             </div> 
         </article>
@@ -91,7 +102,7 @@
     <!-- contenedor de Features -->
     <section class="features-Grid">
         <!--  Features Section  -->
-        <article>
+        <article>  <!--  Fill your blog Section  -->
             <div class="textContainer">
                 <div class="imgIcon"><img src="/Images//icons/blogging.png" alt="" srcset=""></div>
                 <h1>Fill your blog with engaging articles.</h1>
@@ -104,7 +115,7 @@
                 </div>
             </div>  
         </article>
-        <article>
+        <article> <!--  Attract  visitors Section  -->
             <div class="textContainer">
                 <div class="imgIcon"><img src="/Images//icons/returning-visitor.png" alt="" srcset=""></div>
                 <h1>Attract and engage more website visitors.</h1>
@@ -113,11 +124,11 @@
             </div>
            <div class="imgFlexBlock">
             <div class="imgBox">
-                <img src="/Images/Features/image_shopify.png" alt="">
+                <img src="/Images/Features/image_shopify.png" alt="" width="300px">
             </div>
            </div>
         </article>
-        <article>
+        <article> <!--  Capture emails section  -->
             <div class="textContainer">
                 <div class="imgIcon"><img src="/Images//icons/content.png" alt="" srcset=""></div>
                 <h1>Capture more emails with locked content.</h1>
@@ -130,7 +141,7 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article> <!--  Opticmize preformance Section  -->
             <div class="textContainer">
                 <div class="imgIcon"><img src="/Images//icons/seo.png" alt="" srcset=""></div>
                 <h1>Optimize your blog’s performance.</h1>
