@@ -191,6 +191,13 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: scale(102%);
+  box-shadow: var(--LightShadow);
+}
+
 .capterraStars {
   display: flex;
   flex-direction: row;
@@ -221,7 +228,7 @@ button {
   align-items: flex-start;
   gap: 5rem;
   justify-content: space-between;
-  max-width: 70rem;
+  max-width: 75rem;
   margin: 2rem auto;
   padding-top: 3rem;
 }
@@ -254,6 +261,9 @@ h2 {
 }
 
 .videoContainer article {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   padding: 25px;
 }
 
@@ -264,6 +274,7 @@ h2 {
   color: var(--primary-color);
   text-align: left;
   text-transform: uppercase;
+  width: auto;
   margin-bottom: 0.5rem;
 }
 
@@ -279,6 +290,12 @@ h2 {
 .emailContainer button {
   font-family: var(--Secondary-font);
   font-weight: 400;
+}
+.emailContainer button:hover {
+  background-color: var(--green-Accent);
+  color: var(--white-color);
+  transform: scale(102%);
+  box-shadow: var(--LightShadow);
 }
 
 @media screen and (max-width: 768px) {
@@ -505,6 +522,10 @@ section.ecommerce {
 .btn-Secondary {
   background-color: var(--primary-color);}
 
+  .btn-Secondary:hover {
+    background-color: var(--secondary-color);
+  }
+
 /* Card section */
 .card {
   background-color: var(--white-color);
@@ -602,6 +623,10 @@ section.ecommerce {
   margin-top: 1rem;
 }
 
+.card button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: var(--LightShadow);
+}
 .card button {
   background-color: var(--primary-color);
   border: none;
@@ -717,6 +742,10 @@ section.ecommerce {
   background: var(--primary-color);
 }
 
+.workSection button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: var(--LightShadow);
+}
 /* Card Grid Section */
 
 .publishGrid-Container {
