@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Playfair+Display:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Playfair+Display:wght@500;700&display=swap");
 
 * {
   --primary-color: #025157;
@@ -10,10 +10,11 @@
   --beige: #fffbf7;
   --gray-color: #8b8b8b;
   --green-Accent: #a1d683;
-  --Primary-font: 'Playfair Display', serif;
-  --Secondary-font: 'IBM Plex Sans', sans-serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'IBM Plex Sans', sans-serif;
+  --Primary-font: "Playfair Display", serif;
+  --Secondary-font: "IBM Plex Sans", sans-serif;
+  --LightShadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -72,7 +73,7 @@ header .is-toolbar {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   padding: 0;
 }
 
@@ -131,7 +132,6 @@ section.main {
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
-  
 }
 
 .main p {
@@ -183,13 +183,12 @@ button {
   background-color: var(--secondary-color);
   color: var(--white-color);
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1em 1em;
   font-size: 100%;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  
 }
 
 .capterraStars {
@@ -202,7 +201,7 @@ button {
 }
 
 .capterraStars a {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .dashBrd {
@@ -224,7 +223,7 @@ button {
   justify-content: space-between;
   max-width: 70rem;
   margin: 2rem auto;
-  padding-top:3rem ;
+  padding-top: 3rem;
 }
 
 .videoContainer .videoBox {
@@ -265,7 +264,7 @@ h2 {
   color: var(--primary-color);
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .videoContainer h4 {
@@ -327,7 +326,7 @@ h2 {
 section.features-Grid {
   background-color: #025157 !important;
 }
-.features-Grid {  
+.features-Grid {
   padding: 2rem 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -343,13 +342,13 @@ section.features-Grid {
   background-color: var(--white-color);
   border-radius: 1rem;
   padding: 1rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+  box-shadow: var(--LightShadow);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
   margin: 0;
-  transition: 150ms  ease-in-out;
+  transition: 150ms ease-in-out;
 }
 
 .features-Grid .imgIcon {
@@ -362,8 +361,8 @@ section.features-Grid {
   border-radius: 50%;
   background-color: #67b54b;
 }
-  
-.features-Grid .imgIcon img{
+
+.features-Grid .imgIcon img {
   max-width: 100%;
   filter: invert(100%);
 }
@@ -385,8 +384,6 @@ section.features-Grid {
   transition: 500ms ease-in-out;
 }
 
-
-
 .imgBox img {
   max-width: 85%;
   vertical-align: middle;
@@ -399,10 +396,9 @@ section.features-Grid {
   align-items: flex-start;
   justify-content: center;
   gap: 1.5rem;
-  padding: 1rem 1.5rem 0 1.5rem ;
+  padding: 1rem 1.5rem 0 1.5rem;
   max-width: 60%;
 }
-
 
 .textContainer h1 {
   font-size: 2rem;
@@ -431,11 +427,11 @@ section.features-Grid {
 /* Grid Hover Section */
 .features-Grid article:hover {
   transform: scale(102%);
-  }  
+}
 
-  .features-Grid article:hover .imgBox {
+.features-Grid article:hover .imgBox {
   transform: translateY(-50%) translateX(0%);
-  }
+}
 
 /* Responsive grid for mobile */
 @media screen and (max-width: 1100px) {
@@ -444,9 +440,8 @@ section.features-Grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     height: auto;
-    gap: 1rem; 
-    grid-template-areas:
-      ".";
+    gap: 1rem;
+    grid-template-areas: ".";
   }
 }
 
@@ -454,9 +449,8 @@ section.features-Grid {
   .features-Grid article {
     flex-direction: column;
     align-items: center;
+  }
 }
-}
-
 
 /* Section Ecommerce */
 
@@ -518,7 +512,7 @@ section.ecommerce {
   justify-content: center;
   margin: 2rem;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+  box-shadow: var(--LightShadow);
 }
 
 .clientLogo01 {
@@ -526,10 +520,11 @@ section.ecommerce {
   border-radius: 50%;
   width: 6em;
   height: 6rem;
-  bottom: 12.8rem;
+  bottom: 14.8rem;
   right: -1.5rem;
-  z-index:1;
+  z-index: 1;
   background-color: #025157;
+  box-shadow: var(--LightShadow);
   border: #076168 solid 1px;
 }
 
@@ -608,25 +603,25 @@ section.ecommerce {
   background-color: var(--primary-color);
   border: none;
   color: var(--white-color);
-  padding: .8rem 5rem;
+  padding: 0.8rem 5rem;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   display: inline-block;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin: 1rem auto;
   cursor: pointer;
 }
 
-.slider  {
+.slider {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 2rem;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+  box-shadow: var(--LightShadow);
 }
 .slider .circle {
   width: auto;
@@ -677,17 +672,16 @@ section.ecommerce {
 
 /* How does Matcha Work Section */
 .how-does-matcha-work {
-  margin-top: 0rem;
+  margin-top: 5rem;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  position: relative;
 }
 
-.workSection{
+.workSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -739,9 +733,25 @@ section.ecommerce {
   padding: 2rem;
   background-color: var(--white-color);
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px;
+  box-shadow: var(--LightShadow);
   transition: 150ms ease-in-out;
   position: relative;
+}
+.publishGrid-Container article img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 8%;
+}
+
+.publishGrid-Container article .arrowImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  z-index: 1;
+  width: 45%;
+  transition: 500ms ease-in-out;
 }
 
 /* individual Card Section */
@@ -754,12 +764,10 @@ article .illustration {
   overflow: hidden;
   width: 100%;
   height: 20rem;
-  border: red;
-  transition: 500ms ease-in-out;
-
+  transition: 750ms ease-in-out;
 }
 
-.publishGrid-Container article h1{
+.publishGrid-Container article h1 {
   font-size: 1.5rem;
   font-family: var(--Primary-font);
   font-weight: 700;
@@ -788,10 +796,88 @@ article .illustration {
 }
 
 /* Publish Grid Hover states */
-.publishGrid-Container article:hover .illustration{
+.publishGrid-Container article:hover .illustration {
   transform: translate(2rem, -0.5rem);
 }
 
 .publishGrid-Container article:hover {
   transform: scale(102%);
 }
+
+.publishGrid-Container article:hover .arrowImg {
+  transform: translate(-25%, 50%);
+  opacity: 0%;
+}
+
+/* How does matcha work grid Breakpoints */
+
+/* media screens for 1100px max */
+@media screen and (max-width: 1100px) {
+  .publishGrid-Container {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 0 8rem;
+  }
+  .publishGrid-Container article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .publishGrid-Container article img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 4%;
+  }
+  .publishGrid-Container article .illustration {
+    transform: translate(0rem, 2rem);
+  }
+  .publishGrid-Container article .arrowImg {
+    transform: translate(-50%, 600%) rotate(90deg);
+    width: 15%;
+  }
+  .publishGrid-Container article:hover .arrowImg {
+    transform: translate(-50%, 400%) rotate(90deg);
+    opacity: 0%;
+  }
+}
+
+/* media screens for 770px max */
+@media screen and (max-width: 770px) {
+  .publishGrid-Container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 0 8rem;
+  }
+
+  .publishGrid-Container article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+
+  .publishGrid-Container article .illustration {
+    transform: translate(2rem, -2rem);
+    z-index: -0;
+  }
+
+  .publishGrid-Container article .arrowImg {
+    bottom: 0;
+    left: 5%;
+    transform: translate(-50%, 1150%) rotate(90deg);
+    width: 30%;
+  }
+  .publishGrid-Container article:hover .arrowImg {
+    transform: translate(-50%, 800%) rotate(90deg);
+    opacity: 0%;
+  }
+}
+  
