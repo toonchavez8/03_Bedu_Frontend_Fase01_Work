@@ -465,7 +465,26 @@ section.features-Grid {
 @media screen and (max-width: 768px) {
   .features-Grid article {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .features-Grid .imgBox {
+   display: none;
+  }
+
+  .textContainer {
+    padding: 0rem;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .textContainer h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 100%;
+    color: var(--primary-color);
+    margin: auto;
   }
 }
 
@@ -912,4 +931,29 @@ article .illustration {
     opacity: 0%;
   }
 }
+
+@media screen and (max-width: 580px) {
+  header {
+    display: none;
+  }
+
+  .main h1 {
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+  .main p {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+  .emailContainer {
+    padding: 2rem;
+  }
+  .emailContainer input {
+    width:25%;
+  }
+  .emailContainer button {
+    width: 50%;
+  }
+}
+
   
