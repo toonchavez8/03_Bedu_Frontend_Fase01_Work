@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Matcha</title> 
     
@@ -14,30 +16,46 @@
 </head>
 
 <body>
-<header>
-    <!-- Regersar pagina principal-->
-    <div class="logoMatcha">  <a href="index.html">
-        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha Logo" class="logo"><h1> matcha</h1>
-    </a> </div>
-  
-    <!--Menu -->
-    <nav>
-        <ul>
-            <li href="">Platform</li>
-            <li href="">Pricing</li>
-            <li href="">Customers</li>
-            <li href="" >Resources</li>
-            <li href="">About</li>
+
+<!-- bootstrap nav -->
+<nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <div class="container-fluid">
+        <div class="logoMatcha">  <a href="index.html">
+            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha Logo" class="logo"><h1> matcha</h1>
+        </a> </div>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+            </a>
+            
+          </li>
         </ul>
-    </nav>
-
-<!-- Sign off sign on -->
-    <div class="actions">
-        <div class="signIn"><a href="" class="link">Sign In</a> </div><button>Start free trial</button>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</header>
+  </nav> 
 
-    <!-- Main header and CTA -->
+    <!-- Main section -->
     <section class="main">
         <h1>Build your Blog. Build your Business.</h1>
         <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog's impact on sales</p>
