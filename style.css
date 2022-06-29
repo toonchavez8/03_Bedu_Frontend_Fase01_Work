@@ -48,9 +48,19 @@ header {
 }
 
 .navbar .nav-link {
-  font-family: --;
+  font-family: var(--Secondary-font);
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--primary-color) !important;
   transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color) !important;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #a1d683;
 }
 .logoMatcha a {
   display: flex;
@@ -86,7 +96,6 @@ nav ul li {
   font-family: sans-serif;
   font-weight: 700;
   color: #025157;
-  border-left: 0.1rem solid var(--secondary-color);
 }
 
 .actions {
@@ -577,7 +586,7 @@ section.ecommerce {
 
 .ProfilePic {
   position: relative;
-  width: 20rem;
+  width: 20.2rem;
   height: 18rem;
   background: url(/Images/Profilepicture01.jpg) no-repeat;
   background-size: cover;
