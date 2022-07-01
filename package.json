@@ -1,0 +1,22 @@
+{
+  "name": "03_bedu_frontend_fase01_work",
+  "version": "1.0.0",
+  "description": "https://bedu-matcha-miguelchavez.netlify.app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toonchavez8/03_Bedu_Frontend_Fase01_Work.git"
+  },
+  "author": "Miguel Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toonchavez8/03_Bedu_Frontend_Fase01_Work/issues"
+  },
+  "homepage": "https://github.com/toonchavez8/03_Bedu_Frontend_Fase01_Work#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
