@@ -1,7 +1,7 @@
 /** _global.scss */
 /** fuentes */
 /** placeholders */
-.blog .title {
+.blog .title, .try-matcha-free .title {
   font-family: "Playfair Display", serif;
   color: #135359;
 }
@@ -14,7 +14,8 @@
 .blog {
   background-color: #ffffff;
   max-width: unset;
-  padding: 5% 10%;
+  padding: 5% 15%;
+  align-items: center;
 }
 .blog .process-list {
   margin-top: 40px;
@@ -22,6 +23,9 @@
 }
 .blog .process-list .process {
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .blog .process-list .process > div > h3 {
   color: #025157;
@@ -42,10 +46,77 @@
 .blog .process-list .process .process-icon img {
   height: 100%;
 }
-.blog .process-list button {
-  height: auto;
-  border-radius: 4px;
-  padding: 12px;
-  width: 180px;
-  margin-bottom: 15px;
+.blog button {
+  font-size: 1rem;
+  background-color: #025157;
+}
+.blog .card {
+  margin-top: 0.2rem;
+}
+.blog .card-body .card-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: #4a4a4a;
+}
+.blog .card-body .metadata {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+.blog .card-body .metadata .category {
+  color: #67b54b;
+}
+.blog .card-body .metadata .read-time {
+  opacity: 75%;
+  letter-spacing: 1px;
+}
+.blog .card-body .card-text {
+  color: #4a4a4a;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+.blog .card-body .card-text .read-more {
+  text-decoration: underline;
+}
+.blog .card-body .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.blog .card-body .author img {
+  border-radius: 50%;
+  width: auto;
+  height: 2.2rem;
+}
+.blog .card-body .author p {
+  padding: 0;
+  margin: 0;
+}
+
+.try-matcha-free {
+  background: #a1d683;
+  margin: 0;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.try-matcha-free .title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.try-matcha-free p {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 21rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
