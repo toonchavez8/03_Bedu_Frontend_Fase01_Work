@@ -63,11 +63,12 @@ header {
   border-bottom: 2px solid #a1d683;
 }
 
-.navbar .nav-link .active {
+.navbar .active {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--secondary-color) !important;
   border-bottom: 2px solid #a1d683;
+
 
 }
 .logoMatcha a {

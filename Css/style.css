@@ -63,7 +63,7 @@ header {
   border-bottom: 2px solid #a1d683;
 }
 
-.navbar .nav-link .active {
+.navbar .active {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--secondary-color) !important;
@@ -209,6 +209,10 @@ button:hover {
   box-shadow: var(--LightShadow);
 }
 
+button:active {
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
+  transform: scale(1.01);
+}
 .capterraStars {
   display: flex;
   flex-direction: row;
@@ -307,6 +311,11 @@ h2 {
   color: var(--white-color);
   transform: scale(102%);
   box-shadow: var(--LightShadow);
+}
+
+.emailContainer button:active {
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
+  transform: scale(1.01);
 }
 
 @media screen and (max-width: 768px) {
@@ -558,6 +567,11 @@ section.ecommerce {
 }
 
 /* Card section */
+
+.stories-carousel{
+  max-width: 380px;
+}
+
 .card {
   background-color: var(--white-color);
   border-radius: 1rem;
@@ -566,6 +580,7 @@ section.ecommerce {
   align-items: center;
   justify-content: center;
   margin: 2rem;
+  width: fit-content;
   position: relative;
   box-shadow: var(--LightShadow);
 }
@@ -576,7 +591,7 @@ section.ecommerce {
   width: 6em;
   height: 6rem;
   bottom: 14.8rem;
-  right: -1.5rem;
+  right: -1.4rem;
   z-index: 1;
   background-color: #025157;
   box-shadow: var(--LightShadow);
@@ -592,13 +607,31 @@ section.ecommerce {
   padding: 0.8em;
 }
 
-.ProfilePic {
+.ProfilePic1 {
   position: relative;
   width: 20.2rem;
   height: 18rem;
   background: url(/Images/Profilepicture01.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+.ProfilePic2 {
+  position: relative;
+  width: 20.2rem;
+  height: 18rem;
+  background: url(/Images/ProfilePicture02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+.ProfilePic3{
+  position: relative;
+  width: 20.2rem;
+  height: 18rem;
+  background: url(/Images/ProfilePicture03.jpg) no-repeat;
+  background-size: cover;
+  background-position: top -20px right ;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -671,6 +704,11 @@ section.ecommerce {
   font-weight: 700;
   margin: 1rem auto;
   cursor: pointer;
+}
+
+.card button:active {
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
+  transform: scale(1.01);
 }
 
 .slider {
@@ -777,6 +815,14 @@ section.ecommerce {
   background-color: var(--secondary-color);
   box-shadow: var(--LightShadow);
 }
+
+.workSection button:active {
+  background-color: var(--primary-color);
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.25);
+  transform: scale(1.01);
+}
+
+
 /* Card Grid Section */
 
 .publishGrid-Container {
