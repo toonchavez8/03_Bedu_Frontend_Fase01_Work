@@ -1,0 +1,77 @@
+@use "global" as *;
+:root {
+  font-family: "Playfair Display", serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.textFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+
+  h1 {
+    font-family: $font-title;
+    color: $dark-green-text;
+    font-size: 4rem;
+  }
+
+  p {
+    font-family: $font-secondary;
+    color: $gray;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 0 5rem;
+  width: 82%;
+  margin: 1rem auto;
+  align-items: flex-start;
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 150ms ease-in-out;
+
+    h1 {
+      font-family: $font-secondary;
+      color: $dark-green-text;
+      font-size: 2.25rem;
+      text-align: center;
+    }
+
+    p {
+      font-family: $font-secondary;
+      color: $gray;
+      font-size: 1.5rem;
+      margin: 0 auto;
+      // width: 100%;
+      text-align: center;
+    }
+  }
+
+  .grid-item:hover {
+    transform: scale(1.05);
+
+    h1 {
+      color: $light-green;
+      font-size: 2.3rem;
+    }
+  }
+}

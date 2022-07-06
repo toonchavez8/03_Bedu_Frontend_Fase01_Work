@@ -1,0 +1,71 @@
+/** _global.scss */
+/** fuentes */
+/** placeholders */
+:root {
+  font-family: "Playfair Display", serif;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.textFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+.textFeatures h1 {
+  font-family: "Playfair Display", serif;
+  color: #135359;
+  font-size: 4rem;
+}
+.textFeatures p {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 0 5rem;
+  width: 82%;
+  margin: 1rem auto;
+  align-items: flex-start;
+}
+.grid .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 150ms ease-in-out;
+}
+.grid .grid-item h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #135359;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.grid .grid-item p {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.grid .grid-item:hover {
+  transform: scale(1.05);
+}
+.grid .grid-item:hover h1 {
+  color: #67b54b;
+  font-size: 2.3rem;
+}/*# sourceMappingURL=aboutus.css.map */
