@@ -3,7 +3,7 @@
   font-family: "Playfair Display", serif;
   font-family: "IBM Plex Sans", sans-serif;
 }
-
+// Top features
 .textFeatures {
   display: flex;
   flex-direction: column;
@@ -32,7 +32,48 @@
     text-align: center;
   }
 }
+//animated arrow
+.topfeatures {
+  position: relative;
+  @keyframes slideIn {
+    0% {
+      transform: rotate(90deg) translateX(-5%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(90deg) translateX(-1%);
+    }
+  }
+  @keyframes slideOut {
+    from {
+      transform: rotate(90deg) translateY(1200%);
+    }
+    to {
+      transform: rotate(90deg) translateY(-1200%);
+    }
+  }
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg) translateX(-2%);
+    margin: 2rem;
+    animation-name: slideIn, slideOut;
+    animation-duration: 1s, 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
 
+// Features
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
